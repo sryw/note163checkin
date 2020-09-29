@@ -55,6 +55,19 @@ def noteyoudao(YNOTE_SESS: str, user: str, passwd: str):
             noteyoudao(YNOTE_SESS, user, passwd)
             return YNOTE_SESS
 
-if __name__ == "__main__":
-    noteyoudao("",user,passwd)
+#if __name__ == "__main__":
+#    noteyoudao("",user,passwd)
 
+def main（YNOTE_SESS,user,passwd）：
+  noteyoudao = noteyoudao(YNOTE_SESS,user,passwd)
+  content = noteyoudao
+  api = "https://sc.ftqq.com/SCU115315T86c526ed41b48c4c3e7e0ec144df80c75f6d5c0f19e74.send"
+  title = "youdao"
+  data = {
+  "text" = title,
+  "desp" = content
+  }
+  req = requsets.post(url=api,data=data)
+
+if __name__ == "__main__":
+    main(YNOTE_SESS="",user="user",passwd="passwd")
